@@ -12,11 +12,11 @@ function index({value,IncBtn,DecBtn,ResBtn}) {
     <div className={Styles.counterCard}>
        
           
-           <div className={Styles.counterText}>Count:<span style={{color:"orange"}}>{value}</span></div>
+           <div className={Styles.counterText}>Count:<span style={{color:"green"}}>{value}</span></div>
            <div style={{margin:"20px"}}>
-           <button className={Styles.Btn} onClick={IncBtn}>Increment</button>
-           <button className={Styles.Btn} onClick={ResBtn}>Reset</button>
-           <button className={Styles.Btn} onClick={DecBtn}>Decrement</button>
+           <button className={Styles.Btn} style={{backgroundColor:"green"}} onClick={IncBtn}>Increment</button>
+           <button className={Styles.Btn}  onClick={ResBtn}>Reset</button>
+           <button className={Styles.Btn}  style={{backgroundColor:"red"}}onClick={DecBtn}>Decrement</button>
            </div>
      
     </div>
